@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://checkoutshopper-test.cdn.adyen.com/checkoutshopper/sdk/5.68.0/adyen.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      padding: 2rem;
+      text-align: center;
+    }
+    #dropin-container {
+      margin: 2rem auto;
+      max-width: 500px;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h2>Complete Your Payment</h2>
+  <div id="dropin-container"></div>
+
+  <script>
+    const clientKey = "{{ client_key }}";
+  </script>
+  <script src="https://checkoutshopper-test.cdn.adyen.com/checkoutshopper/sdk/5.68.0/adyen.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

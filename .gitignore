@@ -3,7 +3,7 @@
 __pycache__/
 
 # Virtual environment
-backend/venv/
+app/.venv/
 
 # Secrets
-backend/.env
+app/.env
